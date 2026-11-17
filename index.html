@@ -1,10 +1,150 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمد اوستاخ | پردازش جلسات دوزبانه</title>
+    <style>
+        body {
+            font-family: 'Vazirmatn', Tahoma, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #1a365d;
+            border-bottom: 2px solid #3182ce;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2b6cb0;
+            margin-top: 30px;
+        }
+        .author-info {
+            font-size: 1.1em;
+            color: #4a5568;
+            margin-bottom: 20px;
+        }
+        .abstract {
+            background-color: #ebf8ff;
+            padding: 20px;
+            border-right: 4px solid #3182ce;
+            border-radius: 4px;
+            text-align: justify;
+        }
+        .metrics {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+            gap: 10px;
+        }
+        .metric-card {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            min-width: 200px;
+            flex: 1;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+        .metric-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #e53e3e;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px 5px;
+            background-color: #3182ce;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #2b6cb0;
+        }
+        .btn-outline {
+            background-color: transparent;
+            color: #3182ce;
+            border: 2px solid #3182ce;
+        }
+        .btn-outline:hover {
+            background-color: #3182ce;
+            color: #fff;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #718096;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>چارچوب تفسیرپذیر برای پردازش جریانی و آفلاین جلسات دوزبانه</h1>
+        <div class="author-info">
+            <strong>نویسنده:</strong> محمد اوستاخ<br>
+            کارشناسی ارشد هوش مصنوعی و رباتیک، دانشگاه آزاد اسلامی، واحد تهران مرکزی
+        </div>
+
+        <div class="abstract">
+            <strong>چکیده:</strong> پردازش خودکار جلسات آنلاین دوزبانه (فارسی-انگلیسی) با چالش‌های بنیادینی نظیر جابه‌جایی زبان، همپوشانی گفتار گویندگان، محدودیت‌های تأخیر و نیاز به مقیاس‌پذیری و تفسیرپذیری مواجه است. این پژوهش چارچوبی یکپارچه و دوحالته معرفی می‌کند که از دو حالت جریانی و آفلاین پشتیبانی می‌کند. معماری پیشنهادی متشکل از شش لایه اصلی شامل پیش‌پردازش تطبیقی صوت، بازشناسی گفتار مبتنی بر مدل پایه، تفکیک گوینده، خلاصه‌سازی اجماع محور، لایه تفسیرپذیری و استقرار توزیع‌شده است.
+        </div>
+
+        <h2>نتایج کلیدی آزمایش</h2>
+        <div class="metrics">
+            <div class="metric-card">
+                <div>نرخ خطای کلمه (WER)</div>
+                <div class="metric-value">5.56%</div>
+                <small>LibriSpeech</small>
+            </div>
+            <div class="metric-card">
+                <div>تأخیر تفکیک گوینده</div>
+                <div class="metric-value">0.15s</div>
+                <small>Pyannote 3.1</small>
+            </div>
+            <div class="metric-card">
+                <div>امتیاز اطمینان خلاصه‌سازی</div>
+                <div class="metric-value">59.08%</div>
+                <small>Explainability Layer</small>
+            </div>
+        </div>
+
         <h2>دریافت منابع</h2>
         <p>برای مطالعه جزئیات بیشتر، می‌توانید از لینک‌های زیر استفاده کنید:</p>
+        
         <div>
-<a href="https://raw.githubusercontent.com/Avestakh-M/Explainable-Bilingual-Meeting-Framework/main/Avestakh_Paper.pdf" class="btn" target="_blank">📄 دانلود مقاله (PDF)</a>            
-            <!-- لینک مشاهده کدها (به مخزن دیگر می‌رود) -->
-            <a href="https://github.com/Avestakh-M/Explainable-Bilingual-Meeting-Framework" class="btn btn-outline" target="_blank">💻 مشاهده سورس کدها</a>
+            <!-- لینک دانلود مستقیم مقاله از مخزن دیگر -->
+            <a href="https://raw.githubusercontent.com/Avestakh-M/Explainable-Bilingual-Meeting-Framework/main/Avestakh_Paper.pdf" class="btn" target="_blank" rel="noopener">📄 دانلود مقاله (PDF)</a>
             
-            <!-- لینک اجرای کولب (به مخزن دیگر می‌رود) -->
-            <a href="https://colab.research.google.com/github/Avestakh-M/Explainable-Bilingual-Meeting-Framework/blob/main/Avestakh_Framework.ipynb" class="btn btn-outline" target="_blank">▶️ اجرای آنلاین در Colab</a>
+            <!-- لینک مشاهده کدها -->
+            <a href="https://github.com/Avestakh-M/Explainable-Bilingual-Meeting-Framework" class="btn btn-outline" target="_blank" rel="noopener">💻 مشاهده سورس کدها</a>
+            
+            <!-- لینک اجرای آنلاین در Colab -->
+            <a href="https://colab.research.google.com/github/Avestakh-M/Explainable-Bilingual-Meeting-Framework/blob/main/Avestakh_Framework.ipynb" class="btn btn-outline" target="_blank" rel="noopener">▶️ اجرای آنلاین در Colab</a>
         </div>
+
+        <footer>
+            © 2024 محمد اوستاخ | تمامی حقوق محفوظ است.
+        </footer>
+    </div>
+</body>
+</html>
